@@ -1,0 +1,16 @@
+{
+  "name": "socialtechio/auth-service",
+  "description": "Repository for register & auth users.",
+  "type": "project",
+  "require": {
+    "php": "^7.1",
+    "socialtechio/slow-storage-emulator": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/socialtechio/slow-storage-emulator.git"
+    }
+  ],
+  "minimum-stability":"dev"
+}

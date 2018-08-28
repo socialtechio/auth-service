@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bb3ed452e63449c88c964e04b2c47fb0",
+    "packages": [
+        {
+            "name": "socialtechio/slow-storage-emulator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/socialtechio/slow-storage-emulator.git",
+                "reference": "44886aacea45adc3f32f4d7e5afbb60a177e0960"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/socialtechio/slow-storage-emulator/zipball/44886aacea45adc3f32f4d7e5afbb60a177e0960",
+                "reference": "44886aacea45adc3f32f4d7e5afbb60a177e0960",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yuriy Prokopets",
+                    "email": "yuriy.prokopets@victoriabrides.com"
+                }
+            ],
+            "description": "Slow storage emulator",
+            "support": {
+                "source": "https://github.com/socialtechio/slow-storage-emulator/tree/master",
+                "issues": "https://github.com/socialtechio/slow-storage-emulator/issues"
+            },
+            "time": "2018-08-28T12:55:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.1"
+    },
+    "platform-dev": []
+}
