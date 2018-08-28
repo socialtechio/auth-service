@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+while (true)
+{
+    echo "hello!\n";
+    sleep(5);
+}
