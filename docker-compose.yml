@@ -4,21 +4,21 @@ services:
     build: docker/nginx
     ports:
       - 127.0.0.1:80:80
-# uncomment if you need local file share
+# uncomment lines if you need local file share
 #    volumes:
-#      - ./:/app/:cached
+#       - ./:/app/:cached
 
   auth-backend:
     build: .
-# uncomment if you need local file share
-#    volumes:
-#      - ./:/app/:cached
+    volumes:
+       - auth-store:/app/storage # comment this line if you need local file share
+#       - ./:/app/:cached # uncomment this line if you need local file share
 
   auth-worker:
     build: .
-# uncomment if you need local file share
-#    volumes:
-#      - ./:/app/:cached
+    volumes:
+       - auth-store:/app/storage # comment this line if you need local file share
+#       - ./:/app/:cached # uncomment this line if you need local file share
     command: ['./bin/hello-worker']
 
   rabbitmq:
@@ -30,4 +30,5 @@ services:
       - rabbitmq-data:/var/lib/rabbitmq
 
 volumes:
+  auth-store:
   rabbitmq-data:

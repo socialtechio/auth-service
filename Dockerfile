@@ -8,8 +8,7 @@ WORKDIR /app
 COPY composer.json composer.lock
 
 # Install Composer and make it available in the PATH
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer \
-    && composer global require hirak/prestissimo
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
 
 # Copy composer files into the app directory.
 COPY composer.json composer.lock ./

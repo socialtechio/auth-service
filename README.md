@@ -5,7 +5,7 @@ Also track events to external analytic service.
 - install 
 [docker](https://docs.docker.com/install/)( 
 [mac](https://docs.docker.com/docker-for-mac/),
-[windows](https://docs.docker.com/docker-for-mac/)
+[windows](https://docs.docker.com/docker-for-windows/)
 ) with 
 [docker-compose](https://docs.docker.com/compose/install/)
 - make sure that **80** port in **127.0.0.1** interface is free
@@ -25,5 +25,5 @@ docker-compose build --no-cache
 docker-compose up -d --force-recreate
 ```
 
-### rabbit mq management
+### RabbitMQ management
 [http://localhost:15672/](http://localhost:15672/) **[guest:guest]**
