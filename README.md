@@ -25,5 +25,11 @@ docker-compose build --no-cache
 docker-compose up -d --force-recreate
 ```
 
+### Run test
+```bash
+./test
+```
+
 ### RabbitMQ management
 [http://localhost:15672/](http://localhost:15672/) **[guest:guest]**
+
