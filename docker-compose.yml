@@ -1,0 +1,34 @@
+version: "3"
+services:
+  auth-web:
+    build: docker/nginx
+    ports:
+      - 127.0.0.1:80:80
+# uncomment lines if you need local file share
+#    volumes:
+#       - ./:/app/:cached
+
+  auth-backend:
+    build: .
+    volumes:
+       - auth-store:/app/storage # comment this line if you need local file share
+#       - ./:/app/:cached # uncomment this line if you need local file share
+
+  auth-worker:
+    build: .
+    volumes:
+       - auth-store:/app/storage # comment this line if you need local file share
+#       - ./:/app/:cached # uncomment this line if you need local file share
+    command: ['./bin/hello-worker']
+
+  rabbitmq:
+    image: rabbitmq:3.7-management-alpine
+    ports:
+      -  127.0.0.1:15672:15672
+      -  127.0.0.1:5672:5672
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+
+volumes:
+  auth-store:
+  rabbitmq-data:

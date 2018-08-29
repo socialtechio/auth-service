@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/socialtechio/slow-storage-emulator.git",
-                "reference": "44886aacea45adc3f32f4d7e5afbb60a177e0960"
+                "reference": "222536f6104a84ac21f6b059712f32b5ae702dec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/socialtechio/slow-storage-emulator/zipball/44886aacea45adc3f32f4d7e5afbb60a177e0960",
-                "reference": "44886aacea45adc3f32f4d7e5afbb60a177e0960",
+                "url": "https://api.github.com/repos/socialtechio/slow-storage-emulator/zipball/222536f6104a84ac21f6b059712f32b5ae702dec",
+                "reference": "222536f6104a84ac21f6b059712f32b5ae702dec",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 "source": "https://github.com/socialtechio/slow-storage-emulator/tree/master",
                 "issues": "https://github.com/socialtechio/slow-storage-emulator/issues"
             },
-            "time": "2018-08-28T12:55:29+00:00"
+            "time": "2018-08-29T08:31:37+00:00"
         }
     ],
     "packages-dev": [],
