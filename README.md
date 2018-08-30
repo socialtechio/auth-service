@@ -15,15 +15,20 @@ docker-compose up -d
 open http://localhost
 ```
 
-### rebuild container images
+### Install vendors
 ```bash
-docker-compose build --no-cache
+composer install
 ```
 
-### force recreate containers
+
+### Rebuild images & recreate containers
 ```bash
+docker-compose build --no-cache
 docker-compose up -d --force-recreate
 ```
+
+### To enable hot code refreshing in in container follow instructions in ./docker-compose.yml
+
 
 ### Run test
 ```bash
