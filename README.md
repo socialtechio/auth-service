@@ -27,7 +27,7 @@ docker-compose build --no-cache
 docker-compose up -d --force-recreate
 ```
 
-### To enable hot code refreshing in in container follow instructions in ./docker-compose.yml
+### To enable hot code refreshing in container follow instructions in ./docker-compose.yml
 
 
 ### Run test
