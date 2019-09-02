@@ -4,7 +4,29 @@
   "type": "project",
   "require": {
     "php": "^7.1",
-    "socialtechio/slow-storage-emulator": "*"
+    "socialtechio/slow-storage-emulator": "*",
+    "slim/psr7": "^0.5.0",
+    "slim/slim": "^4.0",
+    "ext-json": "*",
+    "slim/http": "^0.7.0",
+    "vlucas/phpdotenv": "^3.5",
+    "firebase/php-jwt": "^5.0"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Services\\": "services/",
+      "Domains\\": "domains/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
   },
   "repositories": [
     {
@@ -12,5 +34,8 @@
       "url": "https://github.com/socialtechio/slow-storage-emulator.git"
     }
   ],
-  "minimum-stability":"dev"
+  "minimum-stability":"dev",
+  "scripts": {
+    "test": "./vendor/bin/phpunit -vvv --no-coverage ./tests"
+   }
 }
