@@ -1,3 +1,10 @@
+# test-task
+
+Request examples you can find at bootstrap.php file
+To run tests ```composer test```
+Before runing tests set your **.env** file
+
+
 # auth-service
 Repository for register &amp; auth users.
 Also track events to external analytic service.
