@@ -1,4 +1,4 @@
-ARG PHP_IMAGE=php:7.2-fpm-alpine
+ARG PHP_IMAGE=php:7.4-fpm-alpine
 
 FROM ${PHP_IMAGE} as app_vendor
 

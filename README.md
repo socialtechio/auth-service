@@ -31,6 +31,7 @@ docker-compose up -d --force-recreate
 
 
 ### Run test
+There is a test script to check response time of the tracking solution. It sends request to ```/uploadDataURL?someVar=someValue``` by default, so you have to change the URL (in ```test.sh``` file) if your url will be different.
 ```bash
 ./test
 ```
